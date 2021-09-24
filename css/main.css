@@ -1,0 +1,81 @@
+
+body {
+  margin: 0;
+}
+
+
+.hero_banner {  
+  width: 100%;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/hero-home.jpg);   
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+  color: white;  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;  
+  text-align: center;  
+    
+}
+
+
+.hero_banner h2{
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.anchor_btn_hero_banner {
+  padding: .5rem 2rem;  
+  text-align: center;
+  border-radius: 1.75rem;
+  color:rgb(0, 159, 122);
+  border: .18rem solid rgb(0, 159, 122);
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.anchor_btn_hero_banner:hover, .anchor_btn_hero_banner:focus{
+  background-color: rgb(0, 159, 122);
+  color:chartreuse;
+}
+
+.cta_banner{
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/soccer-banner-bw.jpg);   
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+  text-align: center;  
+}
+
+.cta_banner h2 {  
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+
+}
+
+.anchor_btn_cta_banner {
+  padding: .1rem 1.5rem;  
+  text-align: center;
+  border-radius: 1.75rem;
+  color:white;
+  border: .18rem solid white;
+  font-family: sans-serif;
+  font-size: .75rem;
+  text-decoration: none;
+}
+
+.anchor_btn_cta_banner:hover, .anchor_btn_cta_banner:focus{
+  background-color:honeydew;
+  color:black;
+  border:.18rem solid chartreuse;
+}
+
+
