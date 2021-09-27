@@ -10,3 +10,10 @@ Overall, great start! A few small changes:
 - You should avoid typing in all caps on the web, it is bad for accessibility. Right in normal sentence case and then we can style it later with CSS to make it all caps.
 - the "Design your brand..." heading should be an <h2>
 - The logos in the header/footer should be wrapped in an <a> linking to the home page
+
+## Week 3 ----------------------
+
+Great work! Here are a few tips to help simplify things up and improve consistency:
+
+- You can simplify your button styles. You've created two separate classes and have duplicated a number lines of code. To simplify, create on `.btn` class that creates the basic button styles and then create a second `.btn-white` that changes to colour to white. This will help keep things consistent as well.
+- The same concept can be applied to the banners as a whole. create a basic `.banner` class that applies basic styles like alignment, color, etc. Then use a secondary class to apply overrides for padding and image.
