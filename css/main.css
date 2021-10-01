@@ -1,29 +1,122 @@
+html{
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.5;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
 
 body {
   margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+  margin: 0 0 1.5rem;
+}
 
-.hero_banner {  
+h1 {
+  font-size: 1.802rem;
+  color:#00673e;
+  text-transform:uppercase;
+  font-weight: lighter; 
+}
+
+h2 {
+  font-size: 1.602rem;
+  text-transform:uppercase;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 1.424rem;
+}
+
+h4 {
+  font-size: 1.266rem;
+  text-transform:uppercase;
+}
+
+h5 {
+  font-size: 1.125rem;
+  border-bottom: .125rem solid #ccc; 
+  color:#00673e;
+}
+
+h6{
+  font-size: 1rem;
+  text-transform:uppercase;
+  font-weight: lighter;
+}
+
+small, .text_small {font-size: 0.889rem;}
+
+a{
+  color:#00673e;
+}
+
+a:focus, a:hover{
+  color:blueviolet;
+}
+
+p{
+  font-size: 1.3rem;
+}
+
+/* this is only for the heading1 in the stylesheet. */
+.head-stylesheet{
+  text-align:center;
+}
+
+
+.container {
+  width:100%;
+  max-width: 70em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin:0 auto;
+} 
+
+.laptop{
+  padding: 0 auto;
+  
+  }
+  .laptop img{
+    width: 100%;
+  }
+
+.container-text{
+  width: 100%;
+  max-width: 45em;
+  margin:0 auto;
+  padding:0 auto;
+  text-align: center;
+}
+
+
+.banner{
   width: 100%;
   padding-top: 16rem;
-  padding-bottom: 16rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/hero-home.jpg);   
+  padding-bottom: 16rem;  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;  
   color: white;  
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;  
-  text-align: center;  
-    
+  text-align: center;
 }
 
+.banner-hero{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/hero-home.jpg);   
+  text-transform: uppercase;
+  }
 
-.hero_banner h2{
+.banner-cta {  
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/soccer-banner-bw.jpg);   
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   text-transform: uppercase;
   font-weight: lighter;
-  font-size: 2rem;
+
 }
 
 .anchor_btn_hero_banner {
@@ -40,25 +133,6 @@ body {
 .anchor_btn_hero_banner:hover, .anchor_btn_hero_banner:focus{
   background-color: rgb(0, 159, 122);
   color:chartreuse;
-}
-
-.cta_banner{
-  width: 100%;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/soccer-banner-bw.jpg);   
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;  
-  text-align: center;  
-}
-
-.cta_banner h2 {  
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-
 }
 
 .anchor_btn_cta_banner {
