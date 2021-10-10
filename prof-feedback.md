@@ -31,3 +31,13 @@ Total: 4.5/5
   - there should be a space between the selector and the opening curly bracket `{`
   - there should be a space between each ruleset
   - double check indentation 
+
+## Week 5 ----------------------
+
+Code Quality: 2/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4/5
+
+- Use `float: right;` on the footer button to more easily align to the right
+- use a combo of `width: 100%` and `max-width: 15rem`; on your logo in the header and footer to create a nice consistent logo size. Using just a percent in the footer is causing it to shrink too small.
