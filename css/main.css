@@ -75,11 +75,94 @@ p{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin:0 auto;
+  
 } 
 
-.container img {
-  width: 100%;
+/* For the logo bar */
+
+.logobar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+
 }
+
+.logobar .one {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15rem;
+} 
+
+.logobar .two {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15rem;
+} 
+
+.logobar .three {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15rem;
+} 
+
+.logobar .four {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 15rem;
+} 
+.logobar li {
+  list-style-type: none;
+}
+
+.logobar img {
+  width: 100%;
+  max-width: 15rem;
+}
+
+/* End logo bar */
+
+
+/*  For the header and the footer */
+
+h1 img {
+  width: 100%;
+  max-width: 15rem;
+  margin-left: 20%;
+}
+
+@media only screen and (min-width: 45em) {
+  .medium {
+    display: flex;
+    justify-content:flex-end;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .medfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    justify-content: space-between;
+    align-items: center;
+    
+  } 
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  nav ul li {
+  margin-right: 1rem;    
+  }
+  
+
+}
+
+/* End */
 nav ul {
   list-style-type: none;
   padding-left: 0;
@@ -89,9 +172,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-top:1rem;
-  margin-right: 1rem;
-  margin-left: 0;  
+  margin-top:1rem;  
 
 }
 
@@ -104,11 +185,13 @@ nav ul li {
   font-family: sans-serif;
   font-size: 1rem;
   text-decoration: none;
-  
+  max-width: 15rem;
 }
 .btn-footer{
+  
   color:white;
   border: .18rem solid white;
+  
 }
 
 .anchor_btn_hero_banner {
@@ -194,6 +277,8 @@ nav ul li {
   padding-top: 1rem;
   
 }
+
+
 .footer-bottom{
   background-color: rgb(3, 57, 44);
   text-align: center;
@@ -211,10 +296,12 @@ small ul li {
   
 }
 .footer-top img {
-  width: 30%;
+  
+  width: 100%;
+  max-width: 15rem;
   display: block;
-  margin-left: 35%;
-  margin-bottom: 1.5rem;
+  margin-left: 25%;
+  margin-bottom: 1rem;
 }
 
 /* For tablet */
@@ -285,54 +372,9 @@ small ul li {
       color:#00673e;
     }
   
-  small, .text_small {font-size: 0.8rem;}
-
-  .larger-size {
-    float: left;
-  }
-  .clear::after {
-                  content: "";
-                  clear: both;
-                  display: table;
-  }
-
-  h1 img {
-        margin-top: 1rem;
-        margin-bottom: -2rem;
-        
-}
-  nav ul li {
-    display: inline;
-  }
-
-  nav ul {
-    padding-top: 3rem;
-  }
-  .f-child, .s-child {
-    float:left;
-    margin-left: 1rem;
-  }
-  .fo-child{
-    float:right;
-  }
-  .t-child{
-    float:right;
-  }
+  small, .text_small {font-size: 0.8rem;} 
 
   
-
-  .footer-top .container img {
-    width: 20%;
-    float: left;
-    margin-left: 0;
-    margin-right: 3rem;
-    display: inline;
-  }
-  .footer-top .container a {
-    margin-right: -8rem;
-    margin-left: 3rem;
-  }
-
   small ul li {
     margin-right: 0;
     }
