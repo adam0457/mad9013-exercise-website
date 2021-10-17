@@ -41,3 +41,17 @@ Total: 4/5
 
 - Use `float: right;` on the footer button to more easily align to the right
 - use a combo of `width: 100%` and `max-width: 15rem`; on your logo in the header and footer to create a nice consistent logo size. Using just a percent in the footer is causing it to shrink too small.
+
+## Week 6 ----------------------
+
+Code Quality: 2.5/3
+Design: .5/1
+File Organization & Commits: 1/1
+Total: 4/5
+
+- Add `align-items: center;` to align the logos vertically.
+- Add some padding around the logo bar to space it out from the content above and below
+- Consider using the `flex` properties to align the content in the header and footer. You've used a few different margins and paddings on the left of logo and the right of the nav which are miss-aligning things.
+- Use a more descriptive name for your `.medium` class. It is acting as a modifier of your `.container` to add `flex`, so a classname of `.container-flex` would be more appropriate.
+  - You could also reuse that in place of the `.medfooter` which you are repeating code in.
+- Sub footer with legal terms is not aligning properly.
