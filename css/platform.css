@@ -1,0 +1,67 @@
+
+.platform-title {
+  text-align: center;  
+}
+
+.grid-platform img {
+  width: 100%;
+  max-width: 30rem;
+  padding-bottom: 1.5rem;
+}
+
+.platform, .platform-laptop {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.banner-hero-platform {  
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/hero-platform.jpg);   
+  padding-top: 16rem;
+  padding-bottom: 16rem;  
+}
+
+.banner-hero-platform h1{
+  color: white;
+}
+
+@media only screen and (min-width:45em) {
+  
+  .img1 {
+    grid-area: one;
+  }
+  .txt1 {
+    grid-area: two;
+  }
+  .img2 {
+    grid-area: four;
+  }
+  .txt2 {
+    grid-area: three;
+  }
+  .img3 {
+    grid-area: five;
+  }
+  .txt3 {
+    grid-area: six;
+  }
+  .img4 {
+    grid-area: eight;
+  }
+  .txt4 {
+    grid-area: seven;
+  }
+.grid-platform {
+    display: grid;
+    grid-template-areas: 
+      'one two'
+      'three four'
+      'five six'
+      'seven eight'
+    ;
+    gap:1.5rem;
+    align-items: center;    
+  }
+}
+
+
+

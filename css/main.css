@@ -3,6 +3,7 @@ html{
   font-family: 'Ubuntu', sans-serif;
   line-height: 1.5;
   }
+
   *, *::before, *::after {
     box-sizing: inherit;
   }
@@ -11,7 +12,7 @@ body {
   margin: 0;
 }
 
-/******* Typography *********/
+/*---------- Typography ----------*/
 h1,h2,h3,h4,h5,h6,p,ul,ol{
   margin: 0 0 1.5rem;
 }
@@ -60,11 +61,11 @@ a:focus, a:hover{
   color:blueviolet;
 }
 
-p{
+p {
   font-size: 1.3rem;
 }
 
-/********* Common styles ************/
+/*---------- Common styles ----------*/
 .container {
   max-width: 70em;
   margin: 0 auto;
@@ -74,14 +75,14 @@ p{
 
 ul {
   list-style-type: none;
-  text-align: center;
+  padding:0;
 }
 
 li {
   margin:1rem;
 }
 
-.banner{
+.banner {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;  
@@ -102,7 +103,7 @@ li {
   background-color:#09a38c ;
   color:white;
 }
-/***** The header *****/
+/*---------- Header ----------*/
 header .container {
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -120,9 +121,9 @@ header img {
 
 header a {
   text-decoration: none;
-}
-  
- /* The main globally */
+} 
+
+/*---------- The main ----------*/
 
 main {
   min-height: calc(100vh - 119.9px - 81px); /* This will expand the size of <main> to push the footer to the bottom on pages with little content */
@@ -136,7 +137,8 @@ main {
 
 }
 
-/***** Section banner-hero *****/
+/*---------- Banner-hero ----------*/
+
 .banner-hero {  
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/hero-home.jpg);   
   padding-top: 16rem;
@@ -148,33 +150,36 @@ main {
   color:#09a38c;
 }
 
-/***** Logo bar *****/
+/*---------- Logo bar ----------*/
 .logobar {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 ol {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  
+  padding: 0;  
 }
+
 ol img {  
   width: 100%;
   max-width: 15rem;
-  }
+}
 
-/***** laptop platform *****/
+/*---------- Laptop Platform ----------*/
   .platform-laptop .container {
     text-align: center;
   }
+
   .platform-laptop img {
     width: 100%;
   }
 
-/***** Section soccer banner - cta *****/
+/*---------- CTA - Banner (soccer) ----------*/
 .banner-cta {  
   background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/soccer-banner-bw.jpg);   
   padding-top: 10rem;
@@ -186,7 +191,7 @@ ol img {
   color:white;
 }
 
-/****** Footer ******/
+/*---------- Footer ----------*/
 .mainfooter {
   background-color: #09a38c;
 }
@@ -221,13 +226,14 @@ footer .container {
 }
 
 .subfooter ul li {
-  display: inline-block;
-  
+  display: inline-block;  
 }
+
 li small a, .copyright {
   color: white;
 }
-/************ Styles For screen larger than mobile  **************/
+
+/*---------- For larger screen ----------*/
 
 @media only screen and (min-width: 38em) {
 
@@ -249,6 +255,7 @@ li small a, .copyright {
   nav{
     flex-grow: 1;
   }
+
   ul {
     display: flex;
     justify-content:flex-end;
@@ -256,8 +263,9 @@ li small a, .copyright {
   
 }
 
-/****** Typography For tablet ******/
-@media only screen and (min-width: 45em){
+/*---------- Typography For tablet ----------*/
+
+@media only screen and (min-width: 45em) {
   h1 {      
       font-size: 2.488rem;
       color:#09a38c;
@@ -288,10 +296,10 @@ li small a, .copyright {
   .text_small {
                 font-size: 0.833rem;
               }  
-
 }
 
-/****** Typography For large screen ******/
+/*---------- Typography For large screen ----------*/
+
 @media only screen and (min-width: 60em){
 
   h1 {
