@@ -55,3 +55,13 @@ Total: 4/5
 - Use a more descriptive name for your `.medium` class. It is acting as a modifier of your `.container` to add `flex`, so a classname of `.container-flex` would be more appropriate.
   - You could also reuse that in place of the `.medfooter` which you are repeating code in.
 - Sub footer with legal terms is not aligning properly.
+
+## Week 7 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+- You should name your new file `platform-tour.html` to be consistent with the page `<title>` and link labels
+- Try and be more descriptive with your class names! Avoid just numbering off your elements.
