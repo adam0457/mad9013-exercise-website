@@ -1,0 +1,80 @@
+table {
+  width: 100%;
+}
+
+.table-scroller {
+  overflow-x:scroll;
+}
+
+.pricing-table {
+  border-collapse: collapse;
+  min-width: 40rem;
+  overflow: hidden;
+}
+
+.pricing-table caption {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: .5rem;
+}
+
+.pricing-table tbody th {
+  text-align: left;
+}
+
+h1, .pricing-table tbody td {
+  text-align: center;
+}
+
+.pricing-table thead th {
+  position: relative;
+}
+
+
+.pricing-table thead th:hover::after 
+{
+  content: ' ';
+  position: absolute;
+  background-color: #f3f6f5;
+  width: 100%;
+  height: 300rem;
+  top: 0;
+  left: 0;
+  z-index:-1;
+}
+
+
+tbody tr:first-child span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+td span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/*----- Targeting the TM and the dollar symbol -----*/
+th span,
+tbody tr:first-child span::first-letter{
+  vertical-align: super;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+tr:last-child td span {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width:45em){
+
+  .table-scroller {
+    overflow-x:hidden;
+  }
+  
+}
