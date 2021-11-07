@@ -65,3 +65,15 @@ Total: 4.75/5
 
 - You should name your new file `platform-tour.html` to be consistent with the page `<title>` and link labels
 - Try and be more descriptive with your class names! Avoid just numbering off your elements.
+
+## Week 9 ----------------------
+
+Code Quality: 2.5/3
+Design: .75/1
+File Organization & Commits: 1/1
+Total: 4.25/5
+
+
+- You can only have one `h1` per page, you have two. The "Affordable Pricing for All" heading should be the `h1`
+- The Premium column should be highlighted with a different text, button, and background color!
+- You do not have the `Ubuntu` Google font linked in your HTML or CSS causing the font to not load properly.
