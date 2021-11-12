@@ -1,0 +1,69 @@
+form {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: .5rem;
+}
+
+fieldset {
+  display: contents;
+}
+
+fieldset input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: .5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 1.2rem;
+  border:1px solid #ddd;
+}
+
+.btn-signup {
+  display: block;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 1.2rem;
+  text-decoration: none;
+  margin:1rem 0;
+  border: solid 0.15rem #09a38c;
+  background-color:#09a38c ;
+  color:white;
+}
+.btn-signup:hover, .btn-signup:focus {
+  border: solid 0.15rem #00673e;
+  background-color:#00673e ;
+}
+
+.container-signup {
+  text-align: left;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+.banner-signup {  
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/hockey-goalie.jpg);   
+  padding-top: 3rem;
+  padding-bottom: 3rem;  
+}
+
+form small {
+  color:black;
+}
+
+@media only screen and (min-width: 60em){
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  input[type=email],input[type=password]{
+    grid-column: 1 / -1;
+  }
+
+}
