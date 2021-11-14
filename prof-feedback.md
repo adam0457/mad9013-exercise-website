@@ -77,3 +77,13 @@ Total: 4.25/5
 - You can only have one `h1` per page, you have two. The "Affordable Pricing for All" heading should be the `h1`
 - The Premium column should be highlighted with a different text, button, and background color!
 - You do not have the `Ubuntu` Google font linked in your HTML or CSS causing the font to not load properly.
+
+## Week 10 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+- All `input` need a `label` with text content in it. This is important for accessibility. To visually hide the labels, use the `screen-reader-text` styles discussed in class.
+- I would suggest putting the background image on the `section`, not the `main`. That way if there ends up being more content added to the page, you wouldn't need to re-do work.
