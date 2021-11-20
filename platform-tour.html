@@ -12,10 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to navigation</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <header>
         <div class="container">
-            <strong><a href="./index.html"><img src="./images/logos/logo-polished-color.svg" alt=""></a></strong> 
-            <nav>
+            <strong><a href="./index.html"><img src="./images/logos/logo-polished-color.svg" alt="The logo of the company"></a></strong> 
+            <nav id="nav" role="navigation">
                 <ul>
                     <li><a href="">Platform Tour</a> </li>
                     <li><a href="">Pricing</a> </li>
@@ -25,15 +29,15 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="banner banner-hero-platform">
+    <main id="main" role="main">
+        <section class="banner banner-hero-platform" tabindex="0">
             <div class="container">
                 <h1>Next Level Design at Your Fingertips.</h1>
                 <p>The Polished+ platform makes designing your brand fast and simple.</p>
                 <a href="" class="btn btn-hero"> Sign Up</a>
             </div>
         </section>
-        <section class="platform">
+        <section class="platform" tabindex="0">
             <div class="container">
                 <div class="platform-title">
                     <h2>The Polished + Platform</h2>
@@ -75,7 +79,7 @@
                 </div>
             </div>
         </section>
-        <section class="platform-laptop">
+        <section class="platform-laptop" tabindex="0">
             <div class="container">
                 <h2>A platform like no other.</h2>
                 <p>With the Polished brand builder, you can create any asset your team could need. From logos, 
@@ -86,7 +90,7 @@
                 <img src="./images/product/laptop-platform.png" alt="">
             </div>
         </section>
-        <section class="banner banner-cta">
+        <section class="banner banner-cta" tabindex="0">
             <div class="container">
                 <h2>Join now and take your team to the next level</h2>
                 <a href="" class="btn btn-white"> Sign Up</a>
@@ -96,7 +100,7 @@
     <footer>
         <div class="mainfooter">
             <div class="container">
-                <a href="" class="a-img-footer" ><img src="./images/logos/logo-polished-white.svg" alt=""></a>
+                <a href="" class="a-img-footer" ><img src="./images/logos/logo-polished-white.svg" alt="The logo of the company with white color"></a>
                 <a href="" class="btn btn-white-footer">Sign Up</a>
             </div>                
         </div>
@@ -110,6 +114,7 @@
                 
             </div>            
         </div> 
+        <a class="to-top" href="#main" aria-label="Click to scroll to top of main content">To top</a>
     </footer>  
 </body>
 </html>

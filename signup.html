@@ -12,10 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to navigation</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <header>
         <div class="container">
-            <strong><a href=""><img src="./images/logos/logo-polished-color.svg" alt=""></a></strong> 
-            <nav>
+            <strong><a href=""><img src="./images/logos/logo-polished-color.svg" alt="The logo of the company"></a></strong> 
+            <nav id="nav" role="navigation">
                 <ul>
                         <li><a href="./platform.html">Platform Tour</a> </li>
                         <li><a href="">Pricing</a> </li>
@@ -25,16 +29,22 @@
             </nav>
         </div>
     </header>
-    <main class="banner banner-signup ">
-        <section class="container container-signup ">
+    <main id="main" role="main" class="banner banner-signup ">
+        <section class="container container-signup " tabindex="0">
             <form action="">
                 <h1>Sign Up</h1>
                 <fieldset>
+                    <legend class="screen-reader-text">info</legend>
                     <div class="form-grid ">
+                        <label for="first-name" class="screen-reader-text">First Name</label>
                         <input type="text" id="first-name" name="first-name" placeholder="First Name" >
+                        <label for="last-name" class="screen-reader-text">Last Name</label>
                         <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                        <label for="email" class="screen-reader-text">Email</label>
                         <input type="email" name="email" id="email" placeholder="Email">
+                        <label for="password" class="screen-reader-text">Password</label>
                         <input type="password" name="password" id="password" placeholder="Password">
+                        <label for="password-confirm" class="screen-reader-text">Confirm Password</label>
                         <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirm Password">
                     </div>                    
                 </fieldset>
@@ -48,7 +58,7 @@
     <footer>
         <div class="mainfooter">
             <div class="container">
-                <a href="" class="a-img-footer" ><img src="./images/logos/logo-polished-white.svg" alt=""></a>
+                <a href="" class="a-img-footer" ><img src="./images/logos/logo-polished-white.svg" alt="The logo of the company with white color"></a>
                 <a href="" class="btn btn-white-footer">Sign Up</a>
             </div>                
         </div>
@@ -59,7 +69,8 @@
                     <li> <small><a href="#" >Privacy Policy</a></small> </li>
                     <li><small><a href="#" >Terms of Service</a></small> </li>                            
                 </ul>                        
-            </div>                        
+            </div> 
+            <a class="to-top" href="#main" aria-label="Click to scroll to top of main content">To top</a>                                                                            
         </div> 
 </footer>
     

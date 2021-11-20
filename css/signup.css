@@ -29,8 +29,10 @@ fieldset input {
   border-radius: 1.2rem;
   text-decoration: none;
   margin:1rem 0;
-  border: solid 0.15rem #09a38c;
-  background-color:#09a38c ;
+  /* border: solid 0.15rem #09a38c; */
+    border: solid 0.15rem #03352D;
+  /* background-color:#09a38c ; */
+  background-color:#03352D ;
   color:white;
 }
 .btn-signup:hover, .btn-signup:focus {
@@ -54,6 +56,18 @@ fieldset input {
 form small {
   color:black;
 }
+
+.screen-reader-text {
+  color:#4A4A4A;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px); // IE 6 and 7
+  clip: rect(1px,1px,1px,1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;  
+  }
 
 @media only screen and (min-width: 60em){
   .form-grid {
