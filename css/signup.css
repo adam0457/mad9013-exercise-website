@@ -34,6 +34,7 @@ fieldset input {
   /* background-color:#09a38c ; */
   background-color:#03352D ;
   color:white;
+  transition: background-color 1s, border 1s;
 }
 .btn-signup:hover, .btn-signup:focus {
   border: solid 0.15rem #00673e;

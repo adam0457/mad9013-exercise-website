@@ -56,11 +56,12 @@ small, .text_small {font-size: 0.889rem;}
 a {
   /* color:#09a38c; */
   color:#03352D;
+  transition: color .6s;
 }
 
 a:focus, a:hover{
   color:blueviolet;
-  background-color: white;
+  /* background-color: white; */
 }
 
 p {
@@ -99,6 +100,7 @@ li {
   padding-left: 2rem;
   border-radius: 1.2rem;
   text-decoration: none;
+  transition: background-color .6s, color 1s;
 }
 .btn:hover, .btn:focus {
   border: solid 0.15rem #09a38c;
@@ -153,6 +155,35 @@ main {
   border: solid 0.15rem #09a38c;
   color:#09a38c;
 }
+
+
+.banner-hero h2,
+.banner-hero p,
+.banner-hero .container .btn-hero {
+  transform: translateY(10rem);
+  opacity: 0;
+  animation: slideUp .5s 1s forwards;
+}
+
+.banner-hero p {
+  animation-delay: 1.25s;
+}
+
+.banner-hero .container .btn-hero {
+  animation-delay: 1.5s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  to {
+    transform:none;
+    opacity: 1;
+  }
+}
+
 
 /*---------- Logo bar ----------*/
 .logobar {
@@ -237,6 +268,46 @@ footer .container {
 li small a, .copyright {
   color: white;
 }
+/*---------- For the icons ----------*/
+.subfooter nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subfooter nav a {
+  display: flex;
+  align-items: center;
+  /* color:#09a38c; */
+  color:#fff;
+  background-color: #066051;
+  text-decoration: none;
+  padding: 1rem;
+  transition: color 1s, background-color 1s;
+}
+
+.subfooter nav a:hover,
+.subfooter nav a:focus {
+  background-color: #09a38c;
+  /* color:#09a38c; */
+  color:#03352D;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  /* margin-right: 1rem; */
+}
+
+.icon svg {
+  /* width: 100%; */
+  /* width: 2rem; */
+  max-width: 2rem;
+  height: 100%;
+  display: inline-block;
+  fill: currentColor;
+}
+
 
 /*---------- For larger screen ----------*/
 
@@ -301,6 +372,36 @@ li small a, .copyright {
   .text_small {
                 font-size: 0.833rem;
               }  
+
+  /*---------- Animation for the banner ----------*/
+
+  .banner-hero h2,
+  .banner-hero p,
+  .banner-hero .container .btn-hero {
+    transform: translateX(-10rem);
+    opacity: 0;
+    animation: slideIn .5s 1s forwards;
+  }
+
+  .banner-hero p {
+    animation-delay: 1.25s;
+  }
+
+  .banner-hero .container .btn-hero {
+    animation-delay: 1.5s;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-10rem);
+      opacity: 0;
+    }
+    to {
+      transform:none;
+      opacity: 1;
+    }
+  }
+
 }
 
 /*---------- Typography For large screen ----------*/
