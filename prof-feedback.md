@@ -104,3 +104,13 @@ a:focus, a:hover {
 }
 ```
 There are instances where you do not want these styles applied, for example the footer logo.
+
+
+## Week 12 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+- When applying transition, you should apply it to all properties being applied. On the buttons, you change the background-color, the border-color and the color, but the border-color does not have a transition so it causes and awkward jump.
