@@ -1,0 +1,127 @@
+/*---------- Typography ----------*/
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+  margin: 0 0 1.5rem;
+}
+
+h1 {
+  font-size: 1.802rem;
+  color:#09a38c;
+  text-transform:uppercase;
+  font-weight: lighter; 
+}
+
+h2 {
+  font-size: 1.602rem;
+  text-transform:uppercase;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 1.424rem;
+}
+
+h4 {
+  font-size: 1.266rem;
+  text-transform:uppercase;
+}
+
+h5 {
+  font-size: 1.125rem;
+  border-bottom: .125rem solid #ccc; 
+  color:#09a38c;
+}
+
+h6 {
+  font-size: 1rem;
+  text-transform:uppercase;
+  font-weight: lighter;
+}
+
+small, .text_small {font-size: 0.889rem;}
+
+a {
+  /* color:#09a38c; */
+  color:#03352D;
+  transition: color .6s;
+}
+
+a:focus, a:hover{
+  color:blueviolet;
+  /* background-color: white; */
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+/*---------- Typography For tablet ----------*/
+
+@media only screen and (min-width: 45em) {
+  h1 {      
+      font-size: 2.488rem;
+      color:#09a38c;
+      text-transform:uppercase;
+      font-weight: lighter; 
+    }
+  
+  h2 {
+      font-size: 2.074rem;
+      text-transform:uppercase;
+      font-weight: lighter;
+    }
+  
+  h3 {
+      font-size: 1.728rem;
+    }
+  
+  h4 {
+      font-size: 1.44rem;
+      text-transform:uppercase;
+    }
+  
+  h5 {
+      font-size: 1.2rem;
+    }
+  
+  small, 
+  .text_small {
+                font-size: 0.833rem;
+              }  
+
+}
+
+/*---------- Typography For large screen ----------*/
+
+@media only screen and (min-width: 60em){
+
+  h1 {
+      font-size: 3.052rem;
+      color:#09a38c;
+      text-transform:uppercase;
+      font-weight: lighter; 
+  }
+  
+  h2 {
+      font-size: 2.441rem;
+      text-transform:uppercase;
+      font-weight: lighter;
+    }
+  
+  h3 {
+      font-size: 1.953rem;
+    }
+  
+  h4 {
+      font-size: 1.563rem;
+      text-transform:uppercase;
+    }
+  
+  h5 {
+      font-size: 1.25rem;
+      border-bottom: .125rem solid #ccc; 
+      color:#09a38c;
+    }
+  
+  small, .text_small {font-size: 0.8rem;}   
+        
+}

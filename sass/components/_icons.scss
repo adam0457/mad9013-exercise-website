@@ -1,0 +1,39 @@
+/*---------- For the icons ----------*/
+.subfooter nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subfooter nav a {
+  display: flex;
+  align-items: center;
+  /* color:#09a38c; */
+  color:#fff;
+  background-color: #066051;
+  text-decoration: none;
+  padding: 1rem;
+  transition: color 1s, background-color 1s;
+}
+
+.subfooter nav a:hover,
+.subfooter nav a:focus {
+  background-color: #09a38c;
+  /* color:#09a38c; */
+  color:#03352D;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  /* margin-right: 1rem; */
+}
+
+.icon svg {
+  /* width: 100%; */
+  /* width: 2rem; */
+  max-width: 2rem;
+  height: 100%;
+  display: inline-block;
+  fill: currentColor;
+}

@@ -1,0 +1,71 @@
+/*---------- Footer ----------*/
+.mainfooter {
+  background-color: #09a38c;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainfooter img {
+  width: 100%;
+  max-width: 10rem;
+  margin: 1rem;
+}
+
+.btn-white-footer {
+  border: solid 0.15rem white;
+  color:white;
+  margin: 1rem;
+  background-color:#03352D;
+}
+
+.btn-white-footer:hover, .btn-white-footer:focus {
+  border: solid 0.15rem white;
+  background-color:white ;
+  color:#09a38c;  
+}
+
+.subfooter {
+  background-color: #066051;
+  padding-top: 1rem;
+}
+
+.subfooter ul li {
+  display: inline-block;  
+}
+
+li small a, .copyright {
+  color: white;
+}
+
+/*---------- For larger screen ----------*/
+@media only screen and (min-width: 38em) {
+
+  header .container,
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  header ul li:nth-child(2), 
+  .a-img-footer,
+  .copyright{
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  nav{
+    flex-grow: 1;
+  }
+
+  ul {
+    display: flex;
+    justify-content:flex-end;
+  }
+  
+}

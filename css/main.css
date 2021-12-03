@@ -1,71 +1,15 @@
-html{
+html {
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.5;
-  }
+}
 
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
-}
-
-/*---------- Typography ----------*/
-h1,h2,h3,h4,h5,h6,p,ul,ol{
-  margin: 0 0 1.5rem;
-}
-
-h1 {
-  font-size: 1.802rem;
-  color:#09a38c;
-  text-transform:uppercase;
-  font-weight: lighter; 
-}
-
-h2 {
-  font-size: 1.602rem;
-  text-transform:uppercase;
-  font-weight: lighter;
-}
-
-h3 {
-  font-size: 1.424rem;
-}
-
-h4 {
-  font-size: 1.266rem;
-  text-transform:uppercase;
-}
-
-h5 {
-  font-size: 1.125rem;
-  border-bottom: .125rem solid #ccc; 
-  color:#09a38c;
-}
-
-h6 {
-  font-size: 1rem;
-  text-transform:uppercase;
-  font-weight: lighter;
-}
-
-small, .text_small {font-size: 0.889rem;}
-
-a {
-  /* color:#09a38c; */
-  color:#03352D;
-  transition: color .6s;
-}
-
-a:focus, a:hover{
-  color:blueviolet;
-  /* background-color: white; */
-}
-
-p {
-  font-size: 1.3rem;
 }
 
 /*---------- Common styles ----------*/
@@ -78,91 +22,288 @@ p {
 
 ul {
   list-style-type: none;
-  padding:0;
+  padding: 0;
 }
 
 li {
-  margin:1rem;
+  margin: 1rem;
 }
 
 .banner {
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;  
-  color: white;  
-  text-align: center;  
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
 }
 
 .btn {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   padding-right: 2rem;
   padding-left: 2rem;
   border-radius: 1.2rem;
   text-decoration: none;
-  transition: background-color .6s, color 1s;
+  transition: background-color 0.6s, color 1s;
 }
+
 .btn:hover, .btn:focus {
   border: solid 0.15rem #09a38c;
-  background-color:#09a38c ;
-  color:white;
+  background-color: #09a38c;
+  color: white;
 }
-/*---------- Header ----------*/
+
+/*---------- The main ----------*/
+main {
+  min-height: calc(100vh - 119.9px - 81px);
+  /* This will expand the size of <main> to push the footer to the bottom on pages with little content */
+}
+
+@media only screen and (min-width: 50em) {
+  main {
+    min-height: calc(100vh - 68px - 81px);
+  }
+}
+/*---------- For larger screen ----------*/
+@media only screen and (min-width: 38em) {
+  header .container,
+footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  header ul li:nth-child(2),
+.a-img-footer,
+.copyright {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  nav {
+    flex-grow: 1;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+/*---------- Typography ----------*/
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0 0 1.5rem;
+}
+
+h1 {
+  font-size: 1.802rem;
+  color: #09a38c;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 1.602rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 1.424rem;
+}
+
+h4 {
+  font-size: 1.266rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1.125rem;
+  border-bottom: 0.125rem solid #ccc;
+  color: #09a38c;
+}
+
+h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+small, .text_small {
+  font-size: 0.889rem;
+}
+
+a {
+  /* color:#09a38c; */
+  color: #03352D;
+  transition: color 0.6s;
+}
+
+a:focus, a:hover {
+  color: blueviolet;
+  /* background-color: white; */
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+/*---------- Typography For tablet ----------*/
+@media only screen and (min-width: 45em) {
+  h1 {
+    font-size: 2.488rem;
+    color: #09a38c;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+
+  h2 {
+    font-size: 2.074rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+
+  h3 {
+    font-size: 1.728rem;
+  }
+
+  h4 {
+    font-size: 1.44rem;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  small,
+.text_small {
+    font-size: 0.833rem;
+  }
+}
+/*---------- Typography For large screen ----------*/
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 3.052rem;
+    color: #09a38c;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+
+  h2 {
+    font-size: 2.441rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+
+  h3 {
+    font-size: 1.953rem;
+  }
+
+  h4 {
+    font-size: 1.563rem;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    border-bottom: 0.125rem solid #ccc;
+    color: #09a38c;
+  }
+
+  small, .text_small {
+    font-size: 0.8rem;
+  }
+}
+/* - - - - - - - - - - Accessibility - - - - - - - - - - */
+.skip-links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: -100rem;
+  display: inline-block;
+  padding: 1rem;
+  background-color: #03352D;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 100000;
+}
+
+.skip-links a:focus {
+  top: 0;
+  left: 0;
+}
+
+*:focus {
+  outline: 2px solid #03352D;
+  outline-offset: 2px;
+}
+
+.to-top {
+  color: white;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  background-color: #03352D;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-decoration: none;
+  transform: translateY(100%);
+  transition: background-color 0.2s, color 0.2s, opacity 0.2s, transform 0.2s;
+}
+
+.to-top:hover,
+.to-top:focus {
+  background-color: #03352D;
+  color: white;
+}
+
+/*---- header -------*/
 header .container {
   padding-bottom: 1rem;
   padding-top: 1rem;
   text-align: center;
 }
+
 header img {
-    width: 100%;
-    max-width: 15rem;
+  width: 100%;
+  max-width: 15rem;
 }
 
 .btn-header {
   /* border: solid 0.15rem #09a38c;
   color:#09a38c; */
-  border:solid 0.15rem #03352D;
-  color:#03352D;
+  border: solid 0.15rem #03352D;
+  color: #03352D;
 }
 
 header a {
   text-decoration: none;
-} 
-
-/*---------- The main ----------*/
-
-main {
-  min-height: calc(100vh - 119.9px - 81px); /* This will expand the size of <main> to push the footer to the bottom on pages with little content */
-}
-
-@media only screen and (min-width: 50em) {
-
-  main {
-    min-height: calc(100vh - 68px - 81px);
-  }
-
 }
 
 /*---------- Banner-hero ----------*/
-
-.banner-hero {  
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/hero-home.jpg);   
+.banner-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/banners/hero-home.jpg);
   padding-top: 16rem;
-  padding-bottom: 16rem;  
+  padding-bottom: 16rem;
 }
 
 .btn-hero {
   border: solid 0.15rem #09a38c;
-  color:#09a38c;
+  color: #09a38c;
 }
-
 
 .banner-hero h2,
 .banner-hero p,
 .banner-hero .container .btn-hero {
   transform: translateY(10rem);
   opacity: 0;
-  animation: slideUp .5s 1s forwards;
+  animation: slideUp 0.5s 1s forwards;
 }
 
 .banner-hero p {
@@ -179,12 +320,10 @@ main {
     opacity: 0;
   }
   to {
-    transform:none;
+    transform: none;
     opacity: 1;
   }
 }
-
-
 /*---------- Logo bar ----------*/
 .logobar {
   padding-top: 1rem;
@@ -197,33 +336,33 @@ ol {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 0;  
+  padding: 0;
 }
 
-ol img {  
+ol img {
   width: 100%;
   max-width: 15rem;
 }
 
 /*---------- Laptop Platform ----------*/
-  .platform-laptop .container {
-    text-align: center;
-  }
+.platform-laptop .container {
+  text-align: center;
+}
 
-  .platform-laptop img {
-    width: 100%;
-  }
+.platform-laptop img {
+  width: 100%;
+}
 
 /*---------- CTA - Banner (soccer) ----------*/
-.banner-cta {  
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/soccer-banner-bw.jpg);   
+.banner-cta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/banners/soccer-banner-bw.jpg);
   padding-top: 10rem;
-  padding-bottom: 10rem;  
+  padding-bottom: 10rem;
 }
 
 .btn-white {
   border: solid 0.15rem white;
-  color:white;
+  color: white;
 }
 
 /*---------- Footer ----------*/
@@ -245,15 +384,15 @@ footer .container {
 
 .btn-white-footer {
   border: solid 0.15rem white;
-  color:white;
+  color: white;
   margin: 1rem;
-  background-color:#03352D;
+  background-color: #03352D;
 }
 
 .btn-white-footer:hover, .btn-white-footer:focus {
   border: solid 0.15rem white;
-  background-color:white ;
-  color:#09a38c;  
+  background-color: white;
+  color: #09a38c;
 }
 
 .subfooter {
@@ -262,11 +401,38 @@ footer .container {
 }
 
 .subfooter ul li {
-  display: inline-block;  
+  display: inline-block;
 }
 
 li small a, .copyright {
   color: white;
+}
+
+/*---------- For larger screen ----------*/
+@media only screen and (min-width: 38em) {
+  header .container,
+footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  header ul li:nth-child(2),
+.a-img-footer,
+.copyright {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  nav {
+    flex-grow: 1;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 /*---------- For the icons ----------*/
 .subfooter nav {
@@ -279,7 +445,7 @@ li small a, .copyright {
   display: flex;
   align-items: center;
   /* color:#09a38c; */
-  color:#fff;
+  color: #fff;
   background-color: #066051;
   text-decoration: none;
   padding: 1rem;
@@ -290,7 +456,7 @@ li small a, .copyright {
 .subfooter nav a:focus {
   background-color: #09a38c;
   /* color:#09a38c; */
-  color:#03352D;
+  color: #03352D;
 }
 
 .icon {
@@ -308,200 +474,228 @@ li small a, .copyright {
   fill: currentColor;
 }
 
-
-/*---------- For larger screen ----------*/
-
-@media only screen and (min-width: 38em) {
-
-  header .container,
-  footer .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  header ul li:nth-child(2), 
-  .a-img-footer,
-  .copyright{
-    flex-grow: 1;
-    text-align: left;
-  }
-
-  nav{
-    flex-grow: 1;
-  }
-
-  ul {
-    display: flex;
-    justify-content:flex-end;
-  }
-  
+.platform-title {
+  text-align: center;
 }
 
-/*---------- Typography For tablet ----------*/
+.grid-platform img {
+  width: 100%;
+  max-width: 30rem;
+  padding-bottom: 1.5rem;
+}
+
+.platform, .platform-laptop {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.banner-hero-platform {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/banners/hero-platform.jpg);
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.banner-hero-platform h1 {
+  color: white;
+}
 
 @media only screen and (min-width: 45em) {
-  h1 {      
-      font-size: 2.488rem;
-      color:#09a38c;
-      text-transform:uppercase;
-      font-weight: lighter; 
-    }
-  
-  h2 {
-      font-size: 2.074rem;
-      text-transform:uppercase;
-      font-weight: lighter;
-    }
-  
-  h3 {
-      font-size: 1.728rem;
-    }
-  
-  h4 {
-      font-size: 1.44rem;
-      text-transform:uppercase;
-    }
-  
-  h5 {
-      font-size: 1.2rem;
-    }
-  
-  small, 
-  .text_small {
-                font-size: 0.833rem;
-              }  
-
-  /*---------- Animation for the banner ----------*/
-
-  .banner-hero h2,
-  .banner-hero p,
-  .banner-hero .container .btn-hero {
-    transform: translateX(-10rem);
-    opacity: 0;
-    animation: slideIn .5s 1s forwards;
+  .img1 {
+    grid-area: one;
   }
 
-  .banner-hero p {
-    animation-delay: 1.25s;
+  .txt1 {
+    grid-area: two;
   }
 
-  .banner-hero .container .btn-hero {
-    animation-delay: 1.5s;
+  .img2 {
+    grid-area: four;
   }
 
-  @keyframes slideIn {
-    from {
-      transform: translateX(-10rem);
-      opacity: 0;
-    }
-    to {
-      transform:none;
-      opacity: 1;
-    }
+  .txt2 {
+    grid-area: three;
   }
 
+  .img3 {
+    grid-area: five;
+  }
+
+  .txt3 {
+    grid-area: six;
+  }
+
+  .img4 {
+    grid-area: eight;
+  }
+
+  .txt4 {
+    grid-area: seven;
+  }
+
+  .grid-platform {
+    display: grid;
+    grid-template-areas: "one two" "three four" "five six" "seven eight";
+    gap: 1.5rem;
+    align-items: center;
+  }
+}
+table {
+  width: 100%;
 }
 
-/*---------- Typography For large screen ----------*/
-
-@media only screen and (min-width: 60em){
-
-  h1 {
-      font-size: 3.052rem;
-      color:#09a38c;
-      text-transform:uppercase;
-      font-weight: lighter; 
-  }
-  
-  h2 {
-      font-size: 2.441rem;
-      text-transform:uppercase;
-      font-weight: lighter;
-    }
-  
-  h3 {
-      font-size: 1.953rem;
-    }
-  
-  h4 {
-      font-size: 1.563rem;
-      text-transform:uppercase;
-    }
-  
-  h5 {
-      font-size: 1.25rem;
-      border-bottom: .125rem solid #ccc; 
-      color:#09a38c;
-    }
-  
-  small, .text_small {font-size: 0.8rem;}   
-        
+.table-scroller {
+  overflow-x: scroll;
 }
 
-/* - - - - - - - - - - Accessibility - - - - - - - - - - */
-
-.skip-links {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+.pricing-table {
+  border-collapse: collapse;
+  min-width: 40rem;
+  overflow: hidden;
 }
 
-.skip-links a {
+.pricing-table caption {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 0.5rem;
+}
+
+.pricing-table tbody th {
+  text-align: left;
+}
+
+h1, .pricing-table tbody td {
+  text-align: center;
+}
+
+.pricing-table thead th {
+  position: relative;
+}
+
+.pricing-table thead th:hover::after {
+  content: " ";
   position: absolute;
-  top: -100rem;
-  display: inline-block;
-  padding: 1rem;
-  background-color: #03352D;
-  color: #fff;
+  background-color: #f3f6f5;
+  width: 100%;
+  height: 300rem;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+tbody tr:first-child span {
   font-weight: bold;
+  font-size: 2rem;
+}
+
+td span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/*----- Targeting the TM and the dollar symbol -----*/
+th span,
+tbody tr:first-child span::first-letter {
+  vertical-align: super;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+tr:last-child td span {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 45em) {
+  .table-scroller {
+    overflow-x: hidden;
+  }
+}
+form {
+  max-width: 35rem;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+fieldset {
+  display: contents;
+}
+
+fieldset input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 1.2rem;
+  border: 1px solid #ddd;
+}
+
+.btn-signup {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 1.2rem;
   text-decoration: none;
-  z-index: 100000;
-}
-
-.skip-links a:focus {
-  top: 0; 
-  left:0
-}
-
-*:focus {
-  outline: 2px solid #03352D;
-  outline-offset: 2px;
-}
-
-.to-top {
-  color:white;
-  position: fixed;
-  bottom: 2rem;
-  right: 1rem;
+  margin: 1rem 0;
+  /* border: solid 0.15rem #09a38c; */
+  border: solid 0.15rem #03352D;
+  /* background-color:#09a38c ; */
   background-color: #03352D;
-  padding: .5rem .75rem;
-  border-radius: .5rem .5rem 0 0;
-  text-decoration: none;
-  transform: translateY(100%);
-  transition:
-    background-color .2s,
-    color .2s,
-    opacity .2s,
-    transform .2s;
+  color: white;
+  transition: background-color 1s, border 1s;
 }
 
-
-.to-top:hover,
-.to-top:focus {
-  background-color: #03352D;
-  color:white;
+.btn-signup:hover, .btn-signup:focus {
+  border: solid 0.15rem #00673e;
+  background-color: #00673e;
 }
 
+.container-signup {
+  text-align: left;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
+.banner-signup {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/banners/hockey-goalie.jpg);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
+form small {
+  color: black;
+}
 
+.screen-reader-text {
+  color: #4A4A4A;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
+}
 
+@media only screen and (min-width: 60em) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 
+  input[type=email], input[type=password] {
+    grid-column: 1/-1;
+  }
+}
 
-
-
-
-
-
+/*# sourceMappingURL=main.css.map */

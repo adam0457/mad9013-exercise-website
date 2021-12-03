@@ -1,0 +1,97 @@
+html{
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.5;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+body {
+  margin: 0;
+}
+
+/*---------- Common styles ----------*/
+.container {
+  max-width: 70em;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding:0;
+}
+
+li {
+  margin:1rem;
+}
+
+.banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+  color: white;  
+  text-align: center;  
+}
+
+.btn {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 1.2rem;
+  text-decoration: none;
+  transition: background-color .6s, color 1s;
+}
+.btn:hover, .btn:focus {
+  border: solid 0.15rem #09a38c;
+  background-color:#09a38c ;
+  color:white;
+}
+
+/*---------- The main ----------*/
+
+main {
+  min-height: calc(100vh - 119.9px - 81px); /* This will expand the size of <main> to push the footer to the bottom on pages with little content */
+}
+
+@media only screen and (min-width: 50em) {
+
+  main {
+    min-height: calc(100vh - 68px - 81px);
+  }
+
+}
+
+/*---------- For larger screen ----------*/
+
+@media only screen and (min-width: 38em) {
+
+  header .container,
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  header ul li:nth-child(2), 
+  .a-img-footer,
+  .copyright{
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  nav{
+    flex-grow: 1;
+  }
+
+  ul {
+    display: flex;
+    justify-content:flex-end;
+  }
+  
+}

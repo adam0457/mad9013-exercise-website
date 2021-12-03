@@ -1,0 +1,41 @@
+
+/*---------- Banner-hero ----------*/
+
+.banner-hero {  
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) ),  url(../images/banners/hero-home.jpg);   
+  padding-top: 16rem;
+  padding-bottom: 16rem;  
+}
+
+.btn-hero {
+  border: solid 0.15rem #09a38c;
+  color:#09a38c;
+}
+
+
+.banner-hero h2,
+.banner-hero p,
+.banner-hero .container .btn-hero {
+  transform: translateY(10rem);
+  opacity: 0;
+  animation: slideUp .5s 1s forwards;
+}
+
+.banner-hero p {
+  animation-delay: 1.25s;
+}
+
+.banner-hero .container .btn-hero {
+  animation-delay: 1.5s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  to {
+    transform:none;
+    opacity: 1;
+  }
+}
