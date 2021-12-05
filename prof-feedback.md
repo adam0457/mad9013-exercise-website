@@ -114,3 +114,11 @@ File Organization & Commits: 1/1
 Total: 4.75/5
 
 - When applying transition, you should apply it to all properties being applied. On the buttons, you change the background-color, the border-color and the color, but the border-color does not have a transition so it causes and awkward jump.
+
+## Week 13 ----------------------
+
+Code Quality: 3/3
+File Organization & Commits: 2/2
+Total: 5/5
+
+Well done!
